@@ -1,4 +1,4 @@
-connection: "nd_snowflake"
+connection: "nd_snowflake_analytics"
 
 # include all the views
 include: "*.view"
@@ -12,7 +12,7 @@ explore: t4008_beacon_event {
 }
 
 explore: contentview {
-  label: "2) HK Apple Daily View Details (2 mths by time)"
+  label: "2) HK Apple Daily View Details (2 mths)"
   view_label: "All Content Views"
   sql_always_where:  ${product} = 'Apple Daily' and ${region} in ('HK') ;;
 }
