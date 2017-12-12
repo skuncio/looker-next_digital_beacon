@@ -6,7 +6,16 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
-explore: t4008_beacon_event {}
+explore: t4008_beacon_event {
+  label: "1) Beacon Events"
+  view_label: "Beacon Events"
+}
+
+explore: contentview {
+  label: "2) HK Apple Daily View Details (2 mths by time)"
+  view_label: "All Content Views"
+  sql_always_where:  ${product} = 'Apple Daily' and ${region} in ('HK') ;;
+}
 
 explore: t4052_beacon_shop {
   view_label: "Shops"
