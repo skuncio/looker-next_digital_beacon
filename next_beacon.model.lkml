@@ -171,7 +171,7 @@ explore: t4053_beacon_category {
 
 # - explore: t5008_ua_device_tags
 
-# - explore: t5009_ua_device_crossref
+explore: t5009_ua_device_crossref {}
 
 # - explore: t5010_ua_connect_event
 
